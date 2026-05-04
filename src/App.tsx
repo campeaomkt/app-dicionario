@@ -65,7 +65,7 @@ export default function App() {
         <div className="relative w-full lg:absolute lg:right-0 lg:top-0 lg:w-3/5 lg:h-full z-0 h-[40vh] md:h-[50vh] lg:h-full order-1 lg:order-2">
           <img 
             src="https://eliabcamposteclas.com/wp-content/uploads/2026/05/hero-app.jpg" 
-            className="w-full h-full object-cover object-top lg:object-center opacity-70 lg:opacity-70"
+            className="w-full h-full object-cover object-top lg:object-center opacity-100"
             alt="Dicionário de Acordes Pro"
             referrerPolicy="no-referrer"
           />
@@ -244,6 +244,75 @@ export default function App() {
               <p className="text-gray-400 text-sm md:text-base leading-relaxed">{m.desc}</p>
             </motion.div>
           ))}
+        </div>
+      </section>
+
+      {/* BIOGRAPHY SECTION */}
+      <section className="section-padding bg-black overflow-hidden border-t border-primary/10">
+        <div className="container mx-auto">
+          <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
+            {/* Foto do Autor */}
+            <motion.div 
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="w-full lg:w-1/2 relative"
+            >
+              <div className="absolute inset-0 bg-primary/20 blur-[80px] md:blur-[120px] rounded-full" />
+              <div className="relative group">
+                <div className="absolute -inset-4 bg-linear-to-r from-primary/30 to-transparent blur-2xl opacity-50 group-hover:opacity-100 transition-opacity" />
+                <div className="relative z-10 overflow-hidden rounded-[2rem] md:rounded-[2.5rem] border border-white/10 max-w-sm mx-auto lg:max-w-none">
+                  <img 
+                    src="https://eliabcamposteclas.com/wp-content/uploads/2026/05/app-tela-1.jpg" 
+                    className="w-full h-full object-cover transition-all duration-700 hover:scale-105"
+                    alt="Eliab Campos"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-60" />
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Texto Biografia */}
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="w-full lg:w-1/2 text-center lg:text-left mt-4 lg:mt-0"
+            >
+              <div className="inline-block px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-sm mb-6">
+                <span className="text-primary text-[10px] md:text-xs font-black tracking-widest uppercase">Referência em Teclado</span>
+              </div>
+              
+              <h2 className="text-3xl md:text-5xl font-display font-extrabold mb-6 md:mb-8 leading-tight">
+                Quem é <span className="text-primary">Eliab Campos?</span>
+              </h2>
+
+              <div className="space-y-4 md:space-y-6 text-gray-300 text-base md:text-xl leading-relaxed">
+                <p>
+                  Com <span className="text-white font-bold">mais de 15 anos</span> de estrada como tecladista profissional, Eliab Campos dedicou sua carreira a desmistificar a harmonia complexa para músicos de todos os níveis.
+                </p>
+                <p>
+                  Sua autoridade no nicho é consolidada por milhares de alunos que já aprenderam como sair do básico e atingir um som profissional com clareza.
+                </p>
+                <p className="border-l-2 border-primary pl-4 md:pl-6 italic text-white/90 text-sm md:text-lg text-left inline-block lg:block">
+                  "Este app é a síntese de anos de prática, organizado para que você tenha em mãos a mesma sofisticação de um grande pianista."
+                </p>
+              </div>
+
+              <div className="mt-8 md:mt-10 flex items-center justify-center lg:justify-start gap-8 md:gap-6">
+                <div className="flex flex-col">
+                  <span className="text-2xl md:text-3xl font-black text-white">+15 anos</span>
+                  <span className="text-primary text-[10px] md:text-xs uppercase font-bold tracking-widest">Experiência</span>
+                </div>
+                <div className="w-px h-10 md:h-12 bg-primary/20" />
+                <div className="flex flex-col">
+                  <span className="text-2xl md:text-3xl font-black text-white">Milhares</span>
+                  <span className="text-primary text-[10px] md:text-xs uppercase font-bold tracking-widest">De Alunos</span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
