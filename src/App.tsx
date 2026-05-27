@@ -373,7 +373,7 @@ export default function App() {
             <div className="text-center mb-8 md:mb-10">
               <span className="text-gray-500 text-xs md:text-sm block line-through opacity-60 mb-1">De R$67,00</span>
               <span className="text-gray-500 text-xs md:text-sm">Por apenas</span>
-              <div className="text-4xl md:text-5xl font-black text-primary my-1 md:my-2">R$27,90</div>
+              <div className="text-4xl md:text-5xl font-black text-primary my-1 md:my-2">R$19,90</div>
               <small className="text-gray-500 uppercase tracking-tighter text-[10px] md:text-xs">pagamento único</small>
             </div>
 
