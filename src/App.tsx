@@ -377,7 +377,7 @@ export default function App() {
               <small className="text-gray-500 uppercase tracking-tighter text-[10px] md:text-xs">pagamento único</small>
             </div>
 
-            <a href="https://pay.kiwify.com.br/tAOucBA" className="cta-button w-full block text-center py-4 px-6 md:py-4.5">
+            <a href="https://pay.wiapy.com/KWC5t-W5x9" className="cta-button w-full block text-center py-4 px-6 md:py-4.5">
               QUERO ACESSAR AGORA
             </a>
           </motion.div>
